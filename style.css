@@ -1,0 +1,304 @@
+/* This bit is for css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Below is where the style begins */
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: hsl(234, 29%, 20%);
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-card {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 670px;
+    margin: 2% auto;
+    background-color: white;
+    border-radius: 10px
+}
+
+
+#image-container {
+    width: 375px;
+    height: auto;
+}
+
+#mobile-image {
+    border-radius: 10px 10px 0 0;
+    max-width:375px;
+    max-height:300px;
+}
+
+#pc-image {
+    display: none;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+    width: 340px;
+}
+
+#stay {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(235, 18%, 26%); 
+}
+
+#join {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#list {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.success {
+    width: 30px;
+    height: 15px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.list-item {
+    margin-top: 10px;
+}
+
+#email-container{
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#email-top {
+    display: flex;
+    flex-direction: row;
+}
+
+#invalid {
+    display: none;
+    color: hsl(4, 100%, 67%);
+    margin-left: 130px;
+}
+
+#email-input {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px 150px 10px 10px;
+    border-radius:10px;
+    border-width: thin;
+    border-color: rgba(235, 233, 233, 0.668);
+}
+
+#subscribe {
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 10px;
+    width: 300px;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(234, 29%, 20%);
+}
+
+#subscribe:hover {
+    cursor: pointer;
+    background: rgb(244,34,34);
+    background: linear-gradient(90deg, rgba(244,34,34,1) 0%, rgba(200,122,122,1) 51%, rgba(235,23,23,1) 71%);
+}
+
+#success {
+    display: none;
+    width: 375px;
+    height: 670px;
+    margin: 2% auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#big-green {
+    margin-top: 100px;
+    margin-left: 20px;
+    width: 100px;
+}
+
+#thanks {
+    color: hsl(234, 29%, 20%);
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#sent {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+#email-bold {
+    font-weight: bold;
+}
+
+#dismiss {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 10px;
+    border: none;
+    margin-left: 40px;
+    margin-top: 250px;
+    padding: 15px 80px 15px 80px;
+}
+
+#dismiss:hover {
+    cursor: pointer;
+    background: rgb(244,34,34);
+    background: linear-gradient(90deg, rgba(244,34,34,1) 0%, rgba(200,122,122,1) 51%, rgba(235,23,23,1) 71%);
+}
+
+@media(min-width: 500px) {
+    #main-card {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 800px;
+        height: 500px;
+    }
+
+    #image-container {
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+
+    #pc-image {
+        display: block;
+        margin-top: 15px;
+        margin-right: 25px;
+        max-width: 600px;
+        max-height: 470px;
+    }
+
+    #mobile-image {
+        display: none;
+    }
+
+    #text {
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 70px;
+    }
+
+    #stay {
+        font-size: 45px;
+    }
+
+    #join {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+    #email-container {
+        width: 400px;
+        margin-top: 40px;
+        font-size: 12px;
+    }
+
+    #invalid {
+        margin-left: 180px;
+    }
+
+    #email-input {
+        padding: 15px 200px 15px 10px;
+    }
+
+    #subscribe {
+        width: 370px;
+        padding: 15px 50px 15px 30px;
+        margin-left: 0px;
+    }
+
+    #success {
+        width: 400px;
+        height: 370px;
+    }
+
+    #big-green {
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 60px;
+    }
+
+    #thanks {
+        font-size: 40px;
+    }
+
+    #sent {
+        width: 330px;
+    }
+
+    #dismiss{
+        margin-left: 20px;
+        padding: 15px 100px 15px 100px;
+        margin-top: 30px;
+    }
+}
